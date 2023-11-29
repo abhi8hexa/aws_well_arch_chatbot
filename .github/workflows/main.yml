@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: Do Something
         run: echo Doing Something...
-      - name: REST API with curl
+      - name: REST API - 1 with curl
         run: curl -X GET "https://example.com/api/v2/endpoint"
+      - name: REST API - 2 with curl
+        run: curl -X GET "https://catfact.ninja/fact"
